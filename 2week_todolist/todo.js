@@ -48,7 +48,7 @@
             case "delete":
                 deleteTodo(value);
                 break;
-            defalt:
+            default:
                 console.log("command error!");
                 break;
         }
@@ -80,7 +80,10 @@
     // if (업데이트 하고자 하는 todo를 찾을 수 없다면) {
     //   return 에러 메시지를 출력하세요
     // }
+        if (!(todos.find((todoValue) => todoValue.id === targetTodo.id)))
+        console.log(`id = ${targetTodo.id}에 맞는 todo를 찾을 수 없습니다.`);
     // 여기에 업데이트 로직을 작성하세요
+        todos = todos.map((todoValue) => (todoValue.id === targetTodo.id ? targetTodo : todoValue));
     // ㅇㅇㅇ
     };
 
@@ -91,7 +94,10 @@
     // if (해당하는 todo id가 todo 데이터에 없다면) {
     //   return console.log(여기에 에러 메시지를 쓰세요);
     // }
+        if (!(todos.find((todoValue) => todoValue.id === id)))
+        console.log(`id = ${id}에 맞는 todo를 찾을 수 없습니다.`);
     // 여기에 삭제 로직을 작성하세요
+        todos = todos.filter((todoValue) => todoValue.id !== id);
     }
 
 
