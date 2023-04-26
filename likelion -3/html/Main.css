@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+  } 
+  .img {
+    justify-content: center;
+  
+  }
+  #profile {
+    width: 150px;
+    height: 150px;
+    transform: scale(1); 
+    border-radius: 70%
+  } 
+  .menu-bar {
+    position: fixed;
+    border: 0;
+    background-color: pink;
+    display: block;
+    width: 200px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .index {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .index h3 {
+    color: black;
+    opacity: 0.7;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .index h3:hover {
+    font-size: 1.1em;
+    opacity: 1;
+    text-shadow: 0.7px 0.7px 0.7px #000;
+  }
+  .about {
+    margin-left: 250px;
+  }
+  .name {
+    font-size: 65px;
+    font-weight: 900;
+    font-family: 'Oswald', sans-serif;
+  }
+  .contacts {
+    font-size: 15px;
+    opacity: 0.5;
+    font-family: 'Roboto Mono', monospace;
+    font-style: italic;
+  }
+  .main-introduction {
+    font-size: 17px;
+    font-family: 'Noto Sans KR', sans-serif;
+    opacity: 0.8;
+    border-bottom:  2px solid pink;
+    border-top: 2px solid pink;
+  }
+  .sns i {
+    margin-right: 40px;
+  }
+  footer img {
+    width: 50px;
+  }
+  footer img:hover {
+    transform: translate(0, -5px);
+  }
+  
